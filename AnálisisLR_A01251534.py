@@ -223,14 +223,3 @@ print("MAE:",mae)
 print("MSE:",mse)
 print("RMSE:",rmse)
 print("R2:",r2)
-
-
-# Al utilizar regresión lineal en ambos casos, nuestro análisis de errores resultó muy parecidos para los dos modelos. Con la visualización de los datos, al inicio del programa, se puede observar que se comportan de manera bastante lineal, Esto, aparte de suponer que nuestro modelo de regresión lineal será bien ajustado, nos indica que el grado de varianza debe ser bajo.
-# 
-# También, al ver los valores de MAE y RMSE, se puede concluir que, para el segundo modelo, probablemente se tenga menor varianza que para el primero, ya que el primero tiene un MAE menor, pero un RMSE casi igual al del segundo. La diferencia mayor entre estos valores indica una mayor varianza.
-# 
-# Al hablar del sesgo de nuestro modelo, resulta tener un nivel muy bajo. Esto es indicado por el R2, que nos dice que nuestro modelo tiene un buen ajuste. El bajo nivel del sesgo se debe al comportamiento lineal que presentan los datos, permitiendo un buen ajuste de nuestro modelo. El MAE que se presenta es bajo y nuestro R2 es alto, por lo que el sesgo es de un nivel bajo.
-# 
-# Al trabajar con una base de datos reducida y que presentó un comportamiento bastante lineal, el fitt o ajuste de nuestro modelo no fue un problema. Aún así, se podrían presentar problemas de underfitt si se utiliza nuestro modelo con más datos de prueba, al haber sido entrenado con muy pocos datos.
-# 
-# Se utilizó train-test-split, con un 25% de testing para evitar el underfitt. Inicialmente, se utilizó un testing de 1/3 de los datos, pero se obtuvieron mejores resultados con el presentado finalmente.
